@@ -2,12 +2,12 @@ public class Product
 {
     private Long id;
     private String productName;
-    private double price;
-    private double weight;
+    private float price;
+    private float weight;
     private String color;
     private Long productCount;
 
-    public Product(Long id, String productName, double price, double weight, String color, Long productCount)
+    public Product(Long id, String productName, float price, float weight, String color, Long productCount)
     {
         this.id = id;
         this.productName = productName;
@@ -47,12 +47,12 @@ public class Product
         return productCount;
     }
 
-    public double setPrice(double price)
+    public void setPrice(float price)
     {
         this.price = price;
     }
 
-    public Long setProductCount(Long productCount)
+    public void setProductCount(Long productCount)
     {
         this.productCount = productCount;
     }
